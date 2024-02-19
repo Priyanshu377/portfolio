@@ -1,4 +1,10 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+window.__VUE_PROD_DEVTOOLS__ = false;
+window.__VUE_PROD_HYDRATION_MISMATCH_DETAILS__ = false;
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router'; 
 
-createApp(App).mount('#app')
+
+const app = createApp(App);
+app.use(router);
+app.mount('#app');

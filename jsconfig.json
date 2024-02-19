@@ -9,9 +9,10 @@
         "src/*"
       ]
     },
+    "types": ["node"],
     "lib": [
       "esnext",
-      "dom",
+      "dom", 
       "dom.iterable",
       "scripthost"
     ]
